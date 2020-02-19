@@ -9,8 +9,8 @@ import Total from './components/Total';
 import { addFeature, removeFeature, addTotal }from './actions/actions'
 
 
-const App = (props) => {
-  const state = {
+const App = props => {
+  // const state = {
   //   additionalPrice: 0,
   //   car: {
   //     price: 26395,
@@ -25,7 +25,7 @@ const App = (props) => {
   //     { id: 3, name: 'Premium sound system', price: 500 },
   //     { id: 4, name: 'Rear spoiler', price: 250 }
   //   ]
-  };
+  // };
 
   const removeFeature = item => {
     props.removeFeature(item)
@@ -51,7 +51,7 @@ const App = (props) => {
   );
 };
 
-function mapStateToProps(state) {
+function mapStateToProps(state){
   return{
     car: state.car,
     additionalFeatures: state.additionalFeatures,

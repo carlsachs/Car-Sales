@@ -1,6 +1,6 @@
 import { ADD_FEATURE, REMOVE_FEATURE, ADD_TOTAL } from '../actions/actions';
 
-export const initialState = {
+const initialState = {
     additionalPrice: 0,
     car: {
       price: 26395,
@@ -17,7 +17,7 @@ export const initialState = {
     ]
   };
   
-export const Reducer = (state, action) => {
+export const Reducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_FEATURE:
       return{
